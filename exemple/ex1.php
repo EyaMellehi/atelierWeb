@@ -49,12 +49,16 @@
 </nav>
 <div class="container mt-2">
     <?php
-    echo " <h1>exercice 1</h1>";?>
-    <table class="table table-primary">
-        <tr>
-            <th>nom</th>
-            <th>note</th>
+    $tab=['Etudiant1'=>"ahmed",'Etudiant2'=>"rami",'Etudiant3'=>"bile"];
+    ?>
+    <table class="table">
+        <tr calss="table-primary">
+          <?php  foreach($tab as $key=>$value){
+             echo "<th>".$key."</th>";
+          }
+           ?>
         </tr>
+        <tr></tr>
         
     </table>
     
